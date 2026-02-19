@@ -21,7 +21,7 @@ import { usePathname } from "next/navigation";
 // Menu items for Standard Users
 const userItems = [
     {
-        title: "Dasbor",
+        title: "Dashboard",
         url: "/dashboard",
         icon: Home,
     },
@@ -50,7 +50,7 @@ const userItems = [
 // Menu items for Admin Users
 const adminItems = [
     {
-        title: "Admin Dasbor",
+        title: "Admin Dashboard",
         url: "/dashboard/admin",
         icon: Shield,
     },
@@ -68,11 +68,6 @@ const adminItems = [
         title: "Pengaturan Admin",
         url: "/dashboard/admin/settings",
         icon: Settings,
-    },
-    {
-        title: "Kembali ke User",
-        url: "/dashboard",
-        icon: Home,
     },
 ];
 
