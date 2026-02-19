@@ -7,7 +7,7 @@ export function Footer() {
                 <div className="flex flex-col items-center gap-2 px-8 md:flex-row md:gap-4 md:px-0">
                     <span className="font-bold text-lg"><span className="text-primary">Digital</span> Skills Hub</span>
                     <p className="text-center text-sm leading-loose text-muted-foreground md:text-left hidden md:block">
-                        &copy; {new Date().getFullYear()} Dibangun untuk Dampak SDG.
+                        &copy; {new Date().getFullYear()} Dibangun untuk KPP Youth Competition.
                     </p>
                 </div>
                 <div className="flex gap-6">
