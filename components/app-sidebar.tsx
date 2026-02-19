@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import {
     Sidebar,
     SidebarContent,
@@ -11,6 +12,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
     SidebarRail,
+    useSidebar,
 } from "@/components/ui/sidebar";
 import { BarChart, BookOpen, Home, Settings, Upload, Users, Shield } from "lucide-react";
 import Link from "next/link";
@@ -76,7 +78,15 @@ const adminItems = [
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     const pathname = usePathname();
+    const { setOpenMobile, isMobile } = useSidebar();
     const isAdmin = pathname?.startsWith("/dashboard/admin");
+
+    // Close sidebar on mobile when route changes
+    useEffect(() => {
+        if (isMobile) {
+            setOpenMobile(false);
+        }
+    }, [pathname, isMobile, setOpenMobile]);
 
     const items = isAdmin ? adminItems : userItems;
     const label = isAdmin ? "Administrator" : "Menu Utama";
