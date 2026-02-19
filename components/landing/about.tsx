@@ -1,5 +1,5 @@
 import { Target, Users, Zap } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { FadeIn } from "@/components/landing/fade-in";
 
 export function About() {
     return (
@@ -9,54 +9,62 @@ export function About() {
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2 items-center">
-                    <div className="space-y-6">
-                        <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary border border-primary/20">
-                            Misi Kami
+                    <FadeIn direction="right">
+                        <div className="space-y-6">
+                            <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary border border-primary/20">
+                                Misi Kami
+                            </div>
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                                Memberdayakan Pemuda dengan <span className="text-gradient">Keterampilan Digital</span>
+                            </h2>
+                            <p className="max-w-[600px] text-muted-foreground md:text-lg leading-relaxed">
+                                Kami berkomitmen untuk mendukung Tujuan Pembangunan Berkelanjutan (SDG) dengan menyediakan pendidikan digital berkualitas tinggi bagi 100 siswa berdedikasi untuk menciptakan masa depan yang lebih baik.
+                            </p>
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                            Memberdayakan Pemuda dengan <span className="text-gradient">Keterampilan Digital</span>
-                        </h2>
-                        <p className="max-w-[600px] text-muted-foreground md:text-lg leading-relaxed">
-                            Kami berkomitmen untuk mendukung Tujuan Pembangunan Berkelanjutan (SDG) dengan menyediakan pendidikan digital berkualitas tinggi bagi 100 siswa berdedikasi untuk menciptakan masa depan yang lebih baik.
-                        </p>
-                    </div>
+                    </FadeIn>
 
                     <div className="grid gap-6">
-                        <div className="glass-card p-6 rounded-xl flex items-start space-x-4">
-                            <div className="p-3 rounded-lg bg-indigo-500/10 text-indigo-500 mt-1">
-                                <Target className="h-6 w-6" />
+                        <FadeIn delay={200} direction="left">
+                            <div className="glass-card p-6 rounded-xl flex items-start space-x-4">
+                                <div className="p-3 rounded-lg bg-indigo-500/10 text-indigo-500 mt-1">
+                                    <Target className="h-6 w-6" />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg mb-1">Pendidikan Berkualitas (SDG 4)</h3>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        Menyediakan pelatihan teknis yang mudah diakses dalam pengembangan web, pemasaran, dan data.
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="font-bold text-lg mb-1">Pendidikan Berkualitas (SDG 4)</h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Menyediakan pelatihan teknis yang mudah diakses dalam pengembangan web, pemasaran, dan data.
-                                </p>
-                            </div>
-                        </div>
+                        </FadeIn>
 
-                        <div className="glass-card p-6 rounded-xl flex items-start space-x-4">
-                            <div className="p-3 rounded-lg bg-emerald-500/10 text-emerald-500 mt-1">
-                                <Users className="h-6 w-6" />
+                        <FadeIn delay={400} direction="left">
+                            <div className="glass-card p-6 rounded-xl flex items-start space-x-4">
+                                <div className="p-3 rounded-lg bg-emerald-500/10 text-emerald-500 mt-1">
+                                    <Users className="h-6 w-6" />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg mb-1">Pekerjaan Layak (SDG 8)</h3>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        Mempersiapkan siswa dengan portofolio yang siap untuk pasar kerja dan karir profesional.
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="font-bold text-lg mb-1">Pekerjaan Layak (SDG 8)</h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Mempersiapkan siswa dengan portofolio yang siap untuk pasar kerja dan karir profesional.
-                                </p>
-                            </div>
-                        </div>
+                        </FadeIn>
 
-                        <div className="glass-card p-6 rounded-xl flex items-start space-x-4">
-                            <div className="p-3 rounded-lg bg-blue-500/10 text-blue-500 mt-1">
-                                <Zap className="h-6 w-6" />
+                        <FadeIn delay={600} direction="left">
+                            <div className="glass-card p-6 rounded-xl flex items-start space-x-4">
+                                <div className="p-3 rounded-lg bg-blue-500/10 text-blue-500 mt-1">
+                                    <Zap className="h-6 w-6" />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg mb-1">Inovasi (SDG 9)</h3>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        Mendorong inovasi melalui teknologi dan pembelajaran berbasis proyek nyata.
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="font-bold text-lg mb-1">Inovasi (SDG 9)</h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Mendorong inovasi melalui teknologi dan pembelajaran berbasis proyek nyata.
-                                </p>
-                            </div>
-                        </div>
+                        </FadeIn>
                     </div>
                 </div>
             </div>
