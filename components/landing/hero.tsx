@@ -12,7 +12,7 @@ export function Hero() {
     const mentorCount = useCountUp(15, 1500);
 
     return (
-        <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-32">
+        <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pb-24 pt-0">
             {/* Background Elements */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-indigo-500/20 rounded-full blur-[100px] -z-10" />
             <div className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] -z-10" />
