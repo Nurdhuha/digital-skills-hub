@@ -56,8 +56,8 @@ export default function AboutPage() {
 
                     <div className="mt-20 flex justify-center">
                         <div className="glass-card bg-primary/5 p-8 md:p-12 rounded-2xl max-w-4xl text-center space-y-6 border-primary/20 relative overflow-hidden">
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-primary/10 to-transparent -z-10" />
-                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-emerald-500">Siap untuk Memulai?</h2>
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-linear-to-b from-primary/10 to-transparent -z-10" />
+                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-indigo-500 to-emerald-500">Siap untuk Memulai?</h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                                 Jangan lewatkan kesempatan untuk meningkatkan keterampilan digital Anda dan membuka peluang karir baru.
                             </p>

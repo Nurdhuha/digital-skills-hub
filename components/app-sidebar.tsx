@@ -90,7 +90,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <Sidebar {...props}>
             <SidebarHeader>
                 <div className="flex items-center px-4 py-2">
-                    <span className="font-bold text-xl"><span className="text-primary">Digi</span>path</span>
+                    <span className="font-bold text-xl tracking-tight"><span className="text-primary">Digi</span>path</span>
                 </div>
             </SidebarHeader>
             <SidebarContent>

@@ -36,7 +36,7 @@ export function Navbar() {
     return (
         <nav className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "glass" : "bg-transparent border-b border-transparent"}`}>
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-                <Link href="/" className="flex items-center gap-2 font-bold text-xl group">
+                <Link href="/" className="flex items-center font-bold text-xl group tracking-tight">
                     <span className="text-primary group-hover:text-indigo-400 transition-colors">Digi</span>path
                 </Link>
 
@@ -100,7 +100,7 @@ export function Navbar() {
             </div>
             {/* Gradient Line */}
             <div
-                className={`absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent transition-all duration-1000 ease-in-out transform origin-center ${isScrolled ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"}`}
+                className={`absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/50 to-transparent transition-all duration-1000 ease-in-out transform origin-center ${isScrolled ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"}`}
             />
         </nav>
     );
