@@ -5,7 +5,7 @@ export function Footer() {
         <footer className="w-full border-t glass py-8">
             <div className="container mx-auto flex flex-col items-center justify-between gap-6 md:h-24 md:flex-row px-4 md:px-6">
                 <div className="flex flex-col items-center gap-2 px-8 md:flex-row md:gap-4 md:px-0">
-                    <span className="font-bold text-lg"><span className="text-primary">Digital</span> Skills Hub</span>
+                    <span className="font-bold text-lg"><span className="text-primary">Digi</span>path</span>
                     <p className="text-center text-sm leading-loose text-muted-foreground md:text-left hidden md:block">
                         &copy; {new Date().getFullYear()} Dibangun untuk KPP Youth Competition.
                     </p>

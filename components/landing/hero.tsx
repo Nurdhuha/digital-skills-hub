@@ -36,7 +36,7 @@ export function Hero() {
 
                         <FadeIn delay={400} className="w-full">
                             <p className="mx-auto max-w-[800px] text-muted-foreground md:text-xl lg:text-2xl leading-relaxed">
-                                Bergabunglah dengan Digital Skills Hub untuk belajar Pengembangan Web, Pemasaran Digital, dan Analisis Data. Bangun portofolio profesional Anda bersama mentor ahli.
+                                Bergabunglah dengan Digipath untuk belajar Pengembangan Web, Pemasaran Digital, dan Analisis Data. Bangun portofolio profesional Anda bersama mentor ahli.
                             </p>
                         </FadeIn>
                     </div>

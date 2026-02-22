@@ -37,7 +37,7 @@ export function Navbar() {
         <nav className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "glass" : "bg-transparent border-b border-transparent"}`}>
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-xl group">
-                    <span className="text-primary group-hover:text-indigo-400 transition-colors">Digital</span> Skills Hub
+                    <span className="text-primary group-hover:text-indigo-400 transition-colors">Digi</span>path
                 </Link>
 
                 {/* Desktop Navigation */}

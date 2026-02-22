@@ -15,8 +15,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Digital Skills Hub",
-  description: "Platform Pengembangan Keterampilan Digital",
+  title: "Digipath",
+  description: "Platform Akselerasi Karir Digital",
 };
 
 export default function RootLayout({

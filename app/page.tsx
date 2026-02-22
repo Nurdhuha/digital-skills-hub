@@ -1,6 +1,7 @@
 import { Hero } from "@/components/landing/hero";
 import { Features } from "@/components/landing/features";
 import { About } from "@/components/landing/about";
+import { Community } from "@/components/landing/community";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Features />
       <About />
+      <Community />
     </div>
   );
 }
